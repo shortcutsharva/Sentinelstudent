@@ -1,0 +1,1 @@
+- Delivers UI tasks as screenshots/mockups with minimal text (e.g., "Build this ui [Image #1]"), expecting a faithful implementation matched to the design in the existing project stack. Confidence: 0.65
