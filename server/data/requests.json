@@ -1,0 +1,16 @@
+[
+  {
+    "id": "REQ-S-mujfrilk2",
+    "type": "Deadline extension",
+    "message": "Test",
+    "createdAt": "2026-09-27T06:26:55.592Z",
+    "status": "new"
+  },
+  {
+    "id": "REQ-S-mujj0lu45",
+    "type": "Deadline extension",
+    "message": "I want to change my physics lecture to be replaced with chemistry lecture.",
+    "createdAt": "2026-09-27T07:57:58.540Z",
+    "status": "new"
+  }
+]

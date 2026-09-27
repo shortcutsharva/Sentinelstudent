@@ -1,0 +1,11 @@
+# User taste & working preferences
+- Drives UI work by supplying visual wireframes/screenshots and asking for them to be built as real screens. Expects the implementation to follow the supplied design rather than reinterpret it. Confidence: 0.65
+- Verify a key exists by checking that the key name is present, not by reading or logging its value. Checked `.gitignore` for `.env` coverage and added it when missing; expects this kind of leak check to happen proactively. Confidence: 0.7
+- Stores service credentials in a plain `./web/.env` (e.g. `SUPABASE_URL`, `SUPABASE_SECRET_KEY`) and is comfortable being pointed at them directly. Confidence: 0.6
+- Works on Windows. Commands must be `cmd`/PowerShell-compatible (`dir /s /b`, `move /y`, `findstr`, `type`); PowerShell quoting through `cmd /c` gets mangled, so call PowerShell directly. File paths use backslashes and absolute Windows paths. Confidence: 0.7
+- Prefers headless-browser verification (dev server + screenshot/console probe) over trusting a clean build alone. Confidence: 0.5
+- `NODE_ENV=production` is set in this environment, so any `npm install <pkg>` silently prunes devDependencies (`vite`, `@types/node` disappear) while still reporting success. Use `npm install --include=dev` or set `NODE_ENV=development` in the same invocation; a bare `npm ci` is not enough. Confidence: 0.8
+- Wants the real backend wired up ("now implement real data"), not a static snapshot or mocked payload standing in for it. Keeping a snapshot as a *fallback* alongside the live path is acceptable. Confidence: 0.7
+- Values business logic staying faithful to the existing Python pipeline: mirror its constants and rules in the reimplementation and cite them (e.g. "Matches Z_THRESHOLD in risk_score_calculation.py"). Confidence: 0.6
+- Sends terse one-line briefs ("Build a dashboard from these wireframes") with no tech spec, and expects autonomous judgment on architecture, routing, and data-source decisions while the supplied design stays fixed. Confidence: 0.55
+- Wants execution over deliberation: pushes with commands like "start building it now" rather than discussing plans, specs, or approaches first. Prefers that implementation begin (or resume) immediately, with progress demonstrated through working, verified results. Confidence: 0.65

@@ -95,6 +95,34 @@
     --sidebar-ring: rgba(234, 88, 12, 0.55);
 }
 
+.dashboard-theme {
+  --color-canvas: #eff8ff;
+  --color-surface: #ffffff;
+  --color-brand-orange: #1769aa;
+  --color-brand-rose: #c2415d;
+  --color-brand-amber: #9a6200;
+  --color-ink: #152b3d;
+  --color-ink-mid: #405a6e;
+  --color-ink-dim: #5e778a;
+  --color-line: rgba(28, 87, 130, 0.14);
+  --color-stone-50: #f4faff;
+  --color-stone-100: #eaf5fd;
+  --color-stone-200: #dcecf7;
+  --color-stone-300: #c7dce9;
+  --color-stone-900: #152b3d;
+}
+
+.dashboard-theme .glass {
+  background: #ffffff;
+  border-color: rgba(28, 87, 130, 0.12);
+  box-shadow: 0 18px 44px -24px rgba(23, 105, 170, 0.16), 0 2px 10px rgba(21, 43, 61, 0.04);
+}
+
+.dashboard-theme .glass-hover:hover {
+  border-color: rgba(23, 105, 170, 0.28);
+  box-shadow: 0 26px 56px -26px rgba(23, 105, 170, 0.24), 0 2px 12px rgba(21, 43, 61, 0.05);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

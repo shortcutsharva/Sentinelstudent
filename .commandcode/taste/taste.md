@@ -1,0 +1,2 @@
+- Prefers brief technical explanations supported by diagrams, especially for architecture overviews. Confidence: 0.88
+- For project READMEs, prefers documentation focused on the tools and technologies used, without explanations of what the code does. Confidence: 0.96

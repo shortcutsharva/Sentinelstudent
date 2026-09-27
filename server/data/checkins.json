@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CHK-mujfve323",
+    "mood": 2,
+    "influences": [
+      "Focus"
+    ],
+    "note": "I need help with my studies mohit sir doesn't help at all",
+    "submittedAt": "2026-09-27T06:29:54.998Z",
+    "receivedAt": "2026-09-27T06:29:56.366Z"
+  },
+  {
+    "id": "CHK-mujiqwsm4",
+    "mood": 2,
+    "influences": [
+      "Coursework"
+    ],
+    "note": "Any problems that you have? I'm too tired with the long lectures that I have.",
+    "submittedAt": "2026-09-27T07:50:24.926Z",
+    "receivedAt": "2026-09-27T07:50:26.182Z"
+  }
+]

@@ -1,0 +1,2 @@
+- Expects pages to be stripped of mock/synthetic/seeded demo data entirely ("empty the requests page") rather than showing it alongside real data — once a real data source exists, the page should hold only real records. Confidence: 0.75
+- Expects changes to be verified live before reporting completion: run lint/typecheck across affected projects, exercise the real flow (start server, send data, view it in the UI, screenshot it), then clean up test data and stop any processes started. Confidence: 0.7
