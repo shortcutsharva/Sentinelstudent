@@ -6,7 +6,7 @@ import { Logo } from './Logo'
 const links = [
   { href: '#how-it-works', label: 'How It Works' },
   { href: '#features', label: 'Features' },
-  { href: '#dashboard', label: 'Dashboard' },
+  { href: '/dashboard', label: 'Dashboard' },
   { href: '#impact', label: 'Impact' },
 ]
 
@@ -47,7 +47,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#dashboard"
+            href="/dashboard"
             className="btn-gradient hidden rounded-lg px-4 py-2 text-sm font-medium sm:inline-flex"
           >
             View Dashboard
@@ -77,7 +77,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#dashboard"
+            href="/dashboard"
             onClick={() => setOpen(false)}
             className="btn-gradient mt-2 flex justify-center rounded-lg px-4 py-2.5 text-sm font-medium"
           >
